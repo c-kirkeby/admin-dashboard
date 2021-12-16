@@ -4,7 +4,7 @@ export const Loading = () => {
   return (
     <Flex h="100vh">
       <Center mx="auto">
-        <Spinner></Spinner>
+        <Spinner />
       </Center>
     </Flex>
   );

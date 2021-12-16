@@ -3,6 +3,8 @@ import { SessionProvider } from "next-auth/react";
 import { Auth } from "../components/Auth";
 import theme from "../theme";
 import { AppProps } from "next/app";
+import '@fontsource/inter/400.css'
+import '@fontsource/inter/600.css'
 
 function App({ Component, pageProps: { session, ...pageProps } }: AppProps) {
   return (
