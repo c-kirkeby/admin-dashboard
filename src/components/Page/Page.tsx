@@ -1,8 +1,6 @@
 import { NextSeo } from "next-seo";
 import { Box, Flex, Heading } from "@chakra-ui/react";
-import SideMenu from "./SideMenu";
-import Header from "./Header";
-import Dashboard from "./Dashboard";
+import { SideMenu, Header, Dashboard } from "src/components";
 
 interface PageProps {
   name: string;
@@ -10,7 +8,7 @@ interface PageProps {
   children: React.ReactChildren;
 }
 
-const Page = ({ name, path, children }: PageProps) => {
+export const Page = ({ name, path, children }: PageProps) => {
   const url = `${URL}${path}`;
   const title = `Admin Dashboard - ${name}`;
   return (
@@ -31,4 +29,3 @@ const Page = ({ name, path, children }: PageProps) => {
     </>
   );
 };
-export default Page;

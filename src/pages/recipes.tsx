@@ -1,4 +1,4 @@
-import Page from "../components/Page";
+import { Page } from "src/components";
 
 const name = "Recipes";
 

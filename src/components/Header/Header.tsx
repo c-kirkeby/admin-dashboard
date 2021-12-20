@@ -12,7 +12,7 @@ import {
 import { useSession, signOut } from "next-auth/react";
 import { FiChevronDown } from "react-icons/fi";
 
-const Header = () => {
+export const Header = () => {
   const { data: session } = useSession();
   return (
     <Flex
@@ -57,5 +57,3 @@ const Header = () => {
     </Flex>
   );
 };
-
-export default Header;

@@ -2,7 +2,7 @@ import { useEffect } from "react";
 import { useSession } from "next-auth/react";
 
 import { signIn } from "next-auth/react";
-import { Loading } from "./Loading";
+import { Loading } from "src/components";
 
 export const Auth = ({ children }) => {
   const { data: session, status } = useSession();

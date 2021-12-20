@@ -20,7 +20,7 @@ const items = [
   },
 ];
 
-const SideMenu = ({ children }: SideMenuProps) => {
+export const SideMenu = ({ children }: SideMenuProps) => {
   return (
     <Box
       as="nav"
@@ -67,5 +67,3 @@ const SideMenu = ({ children }: SideMenuProps) => {
     </Box>
   );
 };
-
-export default SideMenu;
