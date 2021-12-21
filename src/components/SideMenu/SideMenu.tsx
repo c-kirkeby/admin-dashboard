@@ -1,26 +1,8 @@
-import { Box, Flex, Text } from "@chakra-ui/react";
-import Link from "next/link";
+import { Box, Flex } from "@chakra-ui/react";
+import { SideMenuLinks } from "src/components";
+import { menuConfig } from "src/utils/config";
 
-interface SideMenuProps {
-  // children?: React.ReactChildren;
-}
-
-const items = [
-  {
-    label: "Dashboard",
-    link: "/",
-  },
-  {
-    label: "Recipes",
-    link: "/recipes",
-  },
-  {
-    label: "Batches",
-    link: "/batches",
-  },
-];
-
-export const SideMenu = ({ children }: SideMenuProps) => {
+export const SideMenu = () => {
   return (
     <Box
       as="nav"
@@ -45,24 +27,7 @@ export const SideMenu = ({ children }: SideMenuProps) => {
         >
           Demijohn
         </Flex>
-        {items.map((item, index) => (
-          <Link href={item.link} passHref key={index}>
-            <a>
-              <Flex
-                minH={4}
-                margin={4}
-                _hover={{
-                  bg: "gray.200",
-                  color: "gray.600",
-                }}
-                borderRadius="md"
-                p={4}
-              >
-                <Text>{item.label}</Text>
-              </Flex>
-            </a>
-          </Link>
-        ))}
+        <SideMenuLinks items={menuConfig} />
       </Box>
     </Box>
   );
