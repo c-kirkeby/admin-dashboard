@@ -23,7 +23,7 @@ const Index = () => {
               <Th aria-hidden></Th>
             </Tr>
           </Thead>
-          <Tbody bg="white">
+          <Tbody bg="white" fontSize="sm" color="gray.600">
             {data.recipes.map((item) => (
               <Tr key={item._id}>
                 <Td fontWeight="600">{item.name}</Td>
@@ -32,7 +32,7 @@ const Index = () => {
                 <Td>
                   <Link href={`/recipes/${item._id}`} passHref>
                     <a>
-                      <Button colorScheme="purple" variant="link">
+                      <Button colorScheme="purple" variant="link" size="sm">
                         EDIT
                       </Button>
                     </a>
