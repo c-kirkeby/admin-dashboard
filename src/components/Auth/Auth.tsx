@@ -2,9 +2,13 @@ import { useEffect } from "react";
 import { useSession } from "next-auth/react";
 
 import { signIn } from "next-auth/react";
-import { Loading } from "./Loading";
+import { Loading } from "src/components";
 
-export const Auth = ({ children }) => {
+interface AuthProps {
+  children: React.ReactChildren;
+}
+
+export const Auth = ({ children }: AuthProps) => {
   const { data: session, status } = useSession();
   const isUser = !!session?.user;
   useEffect(() => {

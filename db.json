@@ -1,0 +1,22 @@
+{
+  "recipes": [
+    {
+      "_id": "1",
+      "name": "Traditional Mead",
+      "type": "mead",
+      "createdAt": "2021-04-07T09:35:23+11:00"
+    },
+    {
+      "_id": "2",
+      "name": "Blackberry Country Wine",
+      "type": "wine",
+      "createdAt": "2021-04-07T09:39:55+10:00"
+    },
+    {
+      "_id": "3",
+      "name": "Blueberry Mead",
+      "type": "mead",
+      "createdAt": "2021-04-07T11:00:32+10:00"
+    }
+  ]
+}

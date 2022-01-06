@@ -1,6 +1,6 @@
 import { Page } from "src/components";
 
-const name = "Dashboard";
+const name = "Batches";
 
 const Index = () => {
   return <Page name={name} path={"/"}></Page>;
